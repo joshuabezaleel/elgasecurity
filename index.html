@@ -55,6 +55,22 @@
       h1{
         font-size: 17pt;
       }
+
+      .main-sidebar{
+        padding-top: 0px;
+      }
+
+      .col-md-4{
+        padding-right: 0px;
+      }
+
+      .product-info{
+        padding-left:0px;
+      }
+
+      .product-img{
+        padding-left:0px;
+      }
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -71,17 +87,26 @@
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
           <!-- Sidebar user panel -->
-          <div class="user-panel">
-            <div class="pull-left image">
-              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+        <!--   <div class="user-panel">
+            <div class="pull-left information">
+              <p>Hello, CSO</p>
             </div>
             <div class="pull-left info">
               <p>Hello,Alexander Pierce</p>
               <a href="#" class="btn btn-primary btn-block">Sign out</a>
             </div>
-          </div>
+          </div> -->
+
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
+             <li>
+                <a href="#" id="menu_0"><center><span style="font-size : 20pt;">Hello, CSO</span></center></a>
+                <center><span><img class="avatar" src="dist/img/user2-160x160.jpg" style="width:150px;height:150px"><span></center>
+                <br>
+                <center><button type="button" class="btn btn-danger">Sign Out</button><center>
+             </li>
+             <br>
             <li><a href="#" id="menu_1"><center><span style="font-size : 14pt;">Dashboard</span><p><img class="menu-image"src="dist/img/db-on.svg"></p></center></a></li>
             <li><a href="index2.html" id="menu_2"><center><span style="font-size : 14pt;">Overview</span><p><img class="menu-image" src="dist/img/ov-off.svg"></p></center></a></li>
           </ul>
@@ -105,7 +130,7 @@
           <div class="row">
             <!-- Left col -->
             <section class="col-lg-9 connectedSortable">
-              <div class="box box-primary">
+              <div class="box ">
                 <div class="box-header with-border">
                   <h3 class="box-title">Real Time Monitoring</h3>
                 </div><!-- /.box-header -->
@@ -114,14 +139,7 @@
                     <div class="col-md-8">
                       <div class="row">
                         <div class="col-md-4">
-                          <p class="text">
-                            <h1>9F</h1>
-                          </p>
-                        </div>
-                        <div class="col-md-8">
-                          <p class="text-center">
-                            <h3>2/5 Complete (Morning Shift)</h3>
-                          </p>
+                          <span class="label label-warning" style="width:20px;height:20px">7<sup>th</sup></span>  
                         </div>
                       </div>
                       <div class="pad">
@@ -130,10 +148,7 @@
                       </div>
                     </div><!-- /.col -->
                     <div class="col-md-4" >
-                      <p class="text-center">
-                        <h3>Monitoring Progress</h3>
-                      </p>
-                      <div style="max-height : 280px; overflow-y : auto;">
+                      <div style="max-height : 320px; overflow-y : auto;">
                           <div class="info-box bg-yellow" >
                             <span class="info-box-icon info-box-icon-click">8<sup>th</sup></span>
                             <div class="info-box-content">
@@ -224,7 +239,7 @@
               <div class="row">
                 <div class="col-md-8">
                   <section class="col-md-12 connectedSortable">
-                    <div class="box box-primary">
+                    <div class="box">
                       <div class="box-header with-border">
                         <h3 class="box-title">Security Guard on Duty</h3>
                       </div><!-- /.box-header -->
@@ -242,7 +257,7 @@
                                     </span>
                                   </div>
                                   <div class="col-lg-10">
-                                    <div class="col-lg-9">                                
+                                    <div class="col-lg-8">                                
                                       <span>
                                         <span>
                                           <h4>Kylo Ren</h4>
@@ -251,9 +266,9 @@
                                         </span><!-- /.widget-user-image -->                              
                                       </span>
                                     </div>
-                                    <div class="col-lg-3">
-                                      <h4 style="color : green;"><span><img style="width : 12pt;" src="dist/img/points.svg"></span><span>50</span></h4>
-                                      <h4 style="color : red;"><span><img style="width : 12pt;" src="dist/img/reports.svg"></span><span>50</span></h4>
+                                    <div class="col-lg-4">
+                                      <h4 style="color : green;"><span><img style="width : 20pt;" src="dist/img/points.svg"></span><span> 5</span></h4>
+                                      <h4 style="color : red;"><span><img style="width : 20pt;" src="dist/img/reports.svg"></span><span> 0</span></h4>
                                     </div>
                                   </div>
                                 </div> 
@@ -358,18 +373,18 @@
                   </section><!-- /.Left col -->
                 </div><!-- /.col -->
                 <div class="col-md-4">
-                 <div class="box box-primary">
+                 <div class="box ">
                     <div class="box-header with-border">
                       <h3 class="box-title">Media & Notes</h3>
                     </div><!-- /.box-header -->
-                    <div class="box-body" style="max-height : 300px; overflow-y : auto;">
+                    <div class="box-body" style="max-height : 320px; overflow-y : auto;">
                       <ul class="products-list product-list-in-box">
                     <li class="item">
                       <div class="product-img">
                         <img src="dist/img/default-50x50.gif" alt="Product Image">
                       </div>
                       <div class="product-info">
-                        <img class="menu-image"src="dist/img/media-user.svg"style="width:3%">
+                        <img class="menu-image"src="dist/img/media-user.svg"style="width:7%">
                         <a href="javascript::;" class="product-title">Samsung TV</a>
                         <div class="pull-right">
                           <img class="menu-image" src="dist/img/media-clock.svg" style="width:20%">  
@@ -386,7 +401,7 @@
                         <img src="dist/img/default-50x50.gif" alt="Product Image">
                       </div>
                       <div class="product-info">
-                        <img class="menu-image"src="dist/img/media-user.svg"style="width:3%">
+                        <img class="menu-image"src="dist/img/media-user.svg"style="width:7%">
                         <a href="javascript::;" class="product-title">Samsung TV</a>
                         <div class="pull-right">
                           <img class="menu-image"src="dist/img/media-clock.svg"style="width:20%">  
@@ -403,7 +418,7 @@
                         <img src="dist/img/default-50x50.gif" alt="Product Image">
                       </div>
                       <div class="product-info">
-                        <img class="menu-image"src="dist/img/media-user.svg"style="width:3%">
+                        <img class="menu-image"src="dist/img/media-user.svg"style="width:7%">
                         <a href="javascript::;" class="product-title">Samsung TV</a>
                         <div class="pull-right">
                           <img class="menu-image"src="dist/img/media-clock.svg"style="width:20%">  
@@ -420,7 +435,7 @@
                         <img src="dist/img/default-50x50.gif" alt="Product Image">
                       </div>
                       <div class="product-info">
-                        <img class="menu-image"src="dist/img/media-user.svg"style="width:3%">
+                        <img class="menu-image"src="dist/img/media-user.svg"style="width:7%">
                         <a href="javascript::;" class="product-title">Samsung TV</a>
                         <div class="pull-right">
                           <img class="menu-image"src="dist/img/media-clock.svg"style="width:20%">  
@@ -452,7 +467,7 @@
                 </div><!-- /.info-box-content -->
               </div><!-- /.info-box -->
 
-              <div class="box box-primary">
+              <div class="box ">
   <div class="box-header with-border">
     <!-- search form -->
         <p class="text-center">
@@ -471,8 +486,46 @@
       <!-- Here is a label for example -->
     </div><!-- /.box-tools -->
   </div><!-- /.box-header -->
-  <div class="box-footer">
+  <div class="box-footer" style="max-height : 280px; overflow-y : auto;">
     <ul class="products-list product-list-in-box">
+                      <li class="item">
+                      <div class="product-img col-sm-2" style="margin-right:10px;margin-left:0px;">
+                        <img src="dist/img/point-checked.svg" alt="Product Image">
+                      </div>
+                      <div class="product-info col-sm-8 pull-left" style="margin-left:0px;">
+                        <span class="product-description">
+                          <span class="text-blue">John Doe</span> checked at
+                        </span>
+                        <span class="product-description">
+                          <span class="text-yellow">Point B</span> - 3rd floor
+                        </span>
+                        <span class="product-description">
+                          Tag # : F421125B
+                        </span>
+                      </div>
+                      <div class="col-sm-2" style="margin-left:-40px">
+                        <h1>10.40</h1>
+                      </div>
+                    </li><!-- /.item -->
+                      <li class="item">
+                      <div class="product-img col-sm-2" style="margin-right:10px;margin-left:0px">
+                        <img src="dist/img/point-checked.svg" alt="Product Image">
+                      </div>
+                      <div class="product-info col-sm-8 pull-left" style="margin-left:0px">
+                        <span class="product-description">
+                          <span class="text-blue">John Doe</span> checked at
+                        </span>
+                        <span class="product-description">
+                          <span class="text-yellow">Point B</span> - 3rd floor
+                        </span>
+                        <span class="product-description">
+                          Tag # : F421125B
+                        </span>
+                      </div>
+                      <div class="col-sm-2" style="margin-left:-40px">
+                        <h1>10.40</h1>
+                      </div>
+                    </li><!-- /.item -->
                     <li class="item">
                       <div class="product-img col-sm-2" style="margin-right:10px;margin-left:0px">
                         <img src="dist/img/point-checked.svg" alt="Product Image">
@@ -538,14 +591,6 @@
           </div><!-- /.row (main row) -->
 
         </section><!-- /.content -->
-      </div><!-- /.content-wrapper -->
-      <footer class="main-footer">
-        <div class="pull-right hidden-xs">
-          <b>Version</b> 2.3.0
-        </div>
-        <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
-      </footer>
-
       <!-- Control Sidebar -->
       <aside class="control-sidebar control-sidebar-dark">
         <!-- Create the tabs -->
